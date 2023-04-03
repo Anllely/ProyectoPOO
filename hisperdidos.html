@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Pedidos</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/motoristastyle.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+    
+<body style="background-color: #781D42">
+
+    <nav class="navbar  center-content-between navbarH" style="background-color:white;">
+    
+        <a class="navbar-brand"><img src="/img/logo1.png" alt=""></a>
+
+        <div class="">
+
+            <button class="control boton form-control btnCS"  onclick="location.href='inicio_Sesion.html'">Cerrar Sesión</button>
+        </div>
+    
+    </nav>
+    <section class="container col-sm-12 col-12" id="formulario">
+        <div class="tituloInicio1">
+            <h3 class="labels lblResumen"> PEDIDOS FINALIZADOS</h3>
+        </div>
+        <div class="tabla">
+            <table class="table table-striped">
+                <thead>
+                <tr id="" >
+                    <th scope="col">#</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Costo</th>
+                    <th scope="col">Comisión</th>
+                </tr>
+                </thead>
+                <tbody id="tblHP">
+               
+                
+                </tbody>
+            </table>
+        </div> 
+        <div class="btnS col-md-12">
+            <input class="control boton form-control btnLimpia" type="button" value="Borrar Historial" onclick="eliminaPedidoFinalizado()">
+            
+        </div>  
+        <div class="pgAnterior col-sm-12">
+            <a href="repartidor.html">Pagina anterior</a>
+        </div>  
+    </section>
